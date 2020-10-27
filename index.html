@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+
+
+</head>
+
+<body>
+
+    <!--<input id="name" placeholder="username" required>
+    <br>
+    <br>
+    <input type="password" id="password" placeholder="Enter password" required><br>
+    <br>
+    <button style="cursor: pointer;" onclick="buttonclick()">Check</button>*/
+    <br>
+    
+    <select id = "sel">
+        <option value="Html">Html</option>
+        <option value="css">css</option>
+        <option value="JS">JS</option>
+    </select><br><br>
+    <button style="cursor: pointer;" onclick="slect()">Check</button>
+    <img id="img1" onmouseover="setnewimg()" onmouseout="oldimge()" src = "imges/download.jpg" width = 300px />
+    <form action="message.html" onsubmit="return validate()" >
+        <input id="name" placeholder="username" >
+        <label id="lable" style="color:maroon; visibility: hidden";>Invalid</label>
+    <br>
+    <br>
+    <input type="password" id="password" placeholder="Enter password" ><br>
+    <br>
+    <button type ="submit" style="cursor: pointer;" >Submit</button>
+    
+    <form ><input id="name" placeholder="username">
+    <label id="lable" style="color:maroon; visibility: hidden" ;>Invalid</label>
+    <br>
+    <br>
+    <input type="password" id="password" placeholder="Enter password"><br>
+    <br>
+    <button type="button" onclick="val()" style="cursor: pointer;">Submit</button <br>
+    </form>
+    <button type="button" onclick="fadeout()" style="cursor: pointer;">fadeout</button <br>
+    <img id="img1" src = "imges/download.png" width = 30px /><br>
+    <button type="button" onclick="fadein()" style="cursor: pointer;">fadein</button <br>
+        <br><br>
+        <img id="img1" onmouseover="incr()" onmouseout="decr()" src = "imges/download.png" width = 100px />
+    <h2 id="h1">Welcome Jquery</h2>
+    <button id="btn1">Click me</button>
+    <button id="btn2">Click me 2</button>
+    <button id="btn3">toggle</button>
+     <!--<button id="btn4">animate</button>
+    <div class="mydivs" id="firstdiv">
+        <p>
+            this is first para in div1
+        </p>
+        <p>
+            this is second para in div1
+        </p>
+    </div>
+    <div class="mydivs" id="seconddiv">
+        <p>
+            this is third para in div2
+        </p>
+        <p>
+            this is fourth para in div2
+        </p>
+    </div>
+    <div class="mydivs" id="thirddiv">
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+        </ul>
+    </div>
+    <div id ="cube" class="mycube">
+        <p>CUBE</p>
+    </div>beforejqueryui      
+    <h1> Intro to Jqery Ui</h1>
+    <div id="mydiv1" class="mydivs">
+        <label><b>Enter your city:</b></label>
+
+        <input id="mydate" type="text" name=""></div>
+
+
+    <!-- <button id="btn1">Click 1</button>
+            <input id="mydate" type = "text" placeholder="tour birth date">
+    <img id="img1" src = "imges/download.png" title="" width = 100px /><br>
+    <h2>CHampion</h2>
+    <p>i am a champion. i know u will laugh when you will read this not openly but inside of u but its okay idgaf mutha fucka.11</p>
+    <h2>CHampion</h2>
+    <p>i am a champion. i know u will laugh when you will read this not openly but inside of u but its okay idgaf mutha fucka.22</p>
+    <h2>CHampion</h2>
+    <p>i am a champion. i know u will laugh when you will read this not openly but inside of u but its okay idgaf mutha fucka.33</p>
+
+    </div>
+    <button id="abtn">Click me</button><br>
+
+    <div id="mydiv2" title="champ" class="mydivs">
+        <h2>CHampion</h2><br><br>
+        <img id="img1" src="imges/download.png" width=100px /><br>
+
+    </div>
+    <h2>Draggable feature in jquery UI</h2>
+    <div id="mycube1" style="border:1px solid black">
+        <div class="mycube">
+            <h3>
+                cube 1
+            </h3>
+        </div>
+        <div class="mycube">
+            <h3>
+                cube 2
+            </h3>
+        </div>
+    </div>-->
+    <div id="mydiv3"  style="border:1px solid black">
+        
+        <img id="img1" src="imges/download.png" />
+
+    </div>
+
+
+
+</body>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="jqueryui/jquery-ui.js"></script>
+<script>
+
+    /*
+    before jqueryui $(document).ready(function () {
+ 
+         $("#btn4").click(function(){
+             $("#cube").animate({
+             left:'150px',
+             width: '50px',
+             height: '50px',
+     
+             opacity: '1',
+             background:'yellow',
+             color:'white'
+         },1000)
+         })
+         $("#btn1").click(function () {
+             $("#firstdiv").hide();
+         })
+         $("#btn2").click(function () {
+             $("#firstdiv").show();
+         })
+         $("#btn3").click(function () {
+             $("#firstdiv").slideUp(2000).slideDown(2000).fadeOut(2000).fadeIn(2000);
+             /*slideToggle(2000,function(){
+                 alert("faded");
+             });
+         });
+ 
+ 
+         $("h5").hover(fn1, fn2);
+         function fn1() {
+             $("p:first-of-type").fadeIn();
+         }
+         $("buttonhai").click(fn2);
+         function fn2() {
+             $("p:first-of-type").fadeOut();
+         }
+ 
+     })*/
+    $(document).ready(function () {
+        /* $("#mydate").datepicker({
+             numberOfMonths:1,
+             changeYear:true,
+             changeMonth:true,
+             showWeek:true,
+             weekHeader:"week",
+             showOtherMonths:true,
+             maxDate : new Date($.now()),
+             minDate : new Date(1947,10,8),
+ 
+ 
+         });
+        /* $("img").tooltip({
+             track:true,
+             content : "Champion",
+             show:{effect:"highlight",duration:2000},
+             hide:{effect:"explode",duration:2000}
+ 
+         });
+         $("#mydiv").accordion({
+             collapsible:true ,
+             event:"click",
+             animate:2000,
+             active:1,
+             heightStyle:true,
+             icons:{header:"ui-icon-grip-diagonal-se",activeHeader:"ui-icon-circlesmall-close"}
+ 
+         });
+        //$("#mydiv2").click(function () {
+        $("#mydiv2").dialog({
+            draggable: true,
+            title: "hi Champ!",
+            resizeable: true,
+            height: 250,
+            width: 200,
+           // modal: true,  //to not let user do anything on website
+           
+            buttons: [{
+                text: "close",
+                icon: "ui-icon-heart",
+                click: function () {
+                    $(this).dialog("close");
+                }
+            }, {
+                text: "ok",
+                icon: "ui-icon-heart",
+                click: function () {
+                    $(this).dialog("close");
+                }
+
+            }]
+
+            // })
+        });
+        $("#abtn").click(function () {
+           // var getterr = $("#mydiv2").dialog("option","height");
+
+           // alert(getterr);
+            $("#mydiv2").dialog("option","height",500);
+            $("#mydiv2").dialog("option","resizeable",false);
+        });
+
+        var mycities = ["mumbai", "karachi", "islamabad", "lahore", "delhi", "kulkota", "goa", "los Angeles"];
+        $("#mydate").autocomplete({
+            source: mycities
+        }, {
+            autofocus: true,
+            delay: 50,
+            minLength: 2
+        });
+
+        $(".mycube").draggable({
+           // axis :"x",
+           // containment:"document", //parent,
+             cursor:"grabbing",
+             opacity:0.5,
+             grid:[300,300],
+             snap:true,
+             snapTolerance:30
+        });
+        $("#mycube1").sortable({
+            opacity:0.5,
+            distance:50,
+            delay:300,
+            containment:"document", //parent,
+             cursor:"grabbing",
+        });*/
+        $("#img1").resizable({
+           maxWidth:500,
+            maxHeight:500,
+            autoHide:true,
+            //distance:200,
+            ghost:true,
+            aspectRatio:true
+        });
+
+    })
+
+
+</script>
+
+</html>

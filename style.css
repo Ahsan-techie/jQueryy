@@ -1,0 +1,24 @@
+body{
+    color: goldenrod;
+    background-color: whitesmoke;
+}
+.mydivs{
+    border: 2px solid blue;
+    box-sizing: border-box;
+    width :300px;
+    margin: 5px;
+    padding: 10px;
+    display: block;
+}
+div p{
+    color : red;
+}
+.mycube{
+    width: 100px;
+    height: 100px;
+    background-color: orangered;
+    
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+}
